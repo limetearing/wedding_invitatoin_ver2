@@ -1,0 +1,255 @@
+.poster {
+  position: relative;
+}
+.bg_image {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+#bg_img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.slide_show {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+.intro {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+/*  margin-top: -15%;*/
+
+}
+/*
+.comment {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin-top: -15%;
+}
+
+.synopsis {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin-top: -20%;
+  margin-bottom: -15%;
+}
+
+.cast {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.schedule {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  margin-top: -15%;
+}
+
+.preview {
+  position: relative;
+  font-size: 1em;
+}
+.preview_img1 {
+  position: absolute;
+  top: 12.5%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  font-family: "CODE Light";
+  font-weight: bold;
+}
+.preview_img2 {
+  position: absolute;
+  top: 34%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  font-family: "CODE Light";
+  font-weight: bold;
+}
+.preview_img3 {
+  position: absolute;
+  top: 55.3%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  font-family: "CODE Light";
+  font-weight: bold;
+}
+.preview_img4 {
+  position: absolute;
+  top: 76.8%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  font-family: "CODE Light";
+  font-weight: bold;
+}
+
+.preview_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+*/
+.notice {
+  position: relative;
+}
+.notice_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin-top: -8%;
+}
+.notice_map {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  position: relative;
+}
+.contact_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin-top: -8%;
+}
+.contact_call1 {
+  position: absolute;
+  top: 28.5%;
+  left: 34.5%;
+  z-index: 2;
+  width: 4.5%;
+  height: auto;
+}
+.contact_call2 {
+  position: absolute;
+  top: 28.5%;
+  left: 75.1%;
+  z-index: 2;
+  width: 4.5%;
+  height: auto;
+}
+.contact_copy1 {
+  position: absolute;
+  top: 48.5%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+.contact_copy2 {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+.contact_copy3 {
+  position: absolute;
+  top: 61.5%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+.contact_copy4 {
+  position: absolute;
+  top: 76.5%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+.contact_copy5 {
+  position: absolute;
+  top: 83%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+.contact_copy6 {
+  position: absolute;
+  top: 89.5%;
+  left: 65%;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+}
+
+.thanks {
+  position: relative;
+}
+.thanks_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.thanks_button {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  z-index: 2;
+  width: 50%;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>권선우 ♥ 이은교, 결혼합니다!</title>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+      @font-face {
+        font-family: "CODE Light";
+        src: url("./fonts/CODE-Light.woff") format("woff");
+      }
+    </style>
+    <link rel="stylesheet" href="./css/section.css" />
+
+    <meta charset="UTF-8" />
+  <!--   <meta property="og:image" content="./me_src/bear.jpg"  /> -->
+    <meta property="og:image" content="./me_src/Thumbnail.jpg"  />
+    <meta property="og:title" content="권선우 ♥ 이은교, 결혼합니다!" />
+    <meta property="og:description" content="2024년 10월 26일 오후 12시 30분" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qd4skhjrr9"></script>
+
+    <link rel="stylesheet" href="./aos/dist/aos.css" />
+  </head>
+
+  <body>
+
+  <p> my page version 1.7 <p>
+
+    <div class="poster">
+      <div class="slide_show">
+        <img class="bg_image" id="bg_img" src="./src/1_1_bgimage1.jpg" />
+      </div>
+    <!-- <img class="title" src="./src/1_2_title.png" /> -->
+    </div>
+    <img
+      class="intro"
+      data-aos="fade-down"
+      data-aos-duration="400"
+      data-aos-easing="ease-out-cubic"
+      src="./src/intro_ver1.png"
+    />
+    <div
+      class="notice"
+      data-aos="fade-down"
+      data-aos-duration="400"
+      data-aos-easing="ease-out-cubic"
+    >
+      <img class="notice_bg" src="./src/Notice_first.png" />
+      <div class="notice_map">
+        <div id="map" style="width: 80%; aspect-ratio: 1.3"></div>
+      </div>
+    </div>
+
+
+    <script>
+      var mapOptions = {
+        center: new naver.maps.LatLng(37.513, 127.031),
+        zoom: 15.5,
+      };
+      var map = new naver.maps.Map("map", mapOptions);
+      var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.51323946, 127.03150102),
+        map: map,
+      });
+    </script>
+    <script src="./aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script src="./js/title_slider.js"></script>
+  </body>
+</html>
