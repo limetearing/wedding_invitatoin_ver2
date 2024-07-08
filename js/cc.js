@@ -1,27 +1,24 @@
-const swiper = document.querySelector('.carousel_wrapper');
-const prevButtons = document.querySelectorAll('.carousel_prev');
-const nextButtons = document.querySelectorAll('.carousel_next');
-const bullets = document.querySelectorAll('.carousel_circle');
+// const swiper = document.querySelector('.carousel_wrapper');
+// const user_prevButtons = document.querySelectorAll('.carousel_prev');
+// const user_nextButtons = document.querySelectorAll('.carousel_next');
+
+const swiper2 = document.querySelector('.carousel_wrapper2');
+const user_prevButtons2 = document.querySelectorAll('.carousel_prev2');
+const user_nextButtons2 = document.querySelectorAll('.carousel_next2');
 
 let currentSlide = 0;
 
-function showSlide(slideIndex) {
-    swiper.style.transform = `translateX(-${slideIndex * 300}px)`;
+function showSlide(slideIndex, region) {
+    region.style.transform = `translateX(-${slideIndex * 300}px)`;
     currentSlide = slideIndex;
-
-    bullets.forEach((bullet, index) => {
-        if (index === currentSlide) {
-            bullet.classList.add('active');
-        } else {
-            bullet.classList.remove('active');
-        }
-    });
 }
+
+function show_de(prevButtons, nextButtons, region){
 
 prevButtons.forEach((prevButton) => {
     prevButton.addEventListener('click', () => {
         if (currentSlide > 0) {
-            showSlide(currentSlide - 1);
+            showSlide(currentSlide - 1, region);
         }
     });
 });
@@ -29,15 +26,19 @@ prevButtons.forEach((prevButton) => {
 nextButtons.forEach((nextButton) => {
     nextButton.addEventListener('click', () => {
         if (currentSlide < 3) {
-            showSlide(currentSlide + 1);
+            showSlide(currentSlide + 1, region);
         }
     });
 });
 
-bullets.forEach((bullet, index) => {
-    bullet.addEventListener('click', () => {
-        showSlide(index);
-    });
-});
+
 
 showSlide(0);
+}
+
+show_de(user_prevButtons2, user_nextButtons2, swiper2);
+show_de(0);
+
+
+//
+// show_de(user_prevButtons, user_nextButtons, bullets2, swiper);

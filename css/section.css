@@ -92,7 +92,10 @@
     display: flex;
     transition: transform 1s;
 }
-
+.carousel_wrapper2 {
+    display: flex;
+    transition: transform 1s;
+}
 .carousel_slide {
     flex: 0 0 25vw; /* 이미지 크기 설정  */
     position: relative;
@@ -146,7 +149,27 @@
     cursor: pointer;
 }
 
+.carousel_prev2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
+.carousel_next2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 /*
 .comment {
   position: relative;
