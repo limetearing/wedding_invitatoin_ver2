@@ -1,8 +1,10 @@
 .poster {
-  position: relative;
+  position: absolute;
+  z-index: 100;
 }
 .bg_image {
-  position: relative;
+  position: absolute;
+    width: 100vw;
   top: 0;
   left: 0;
   z-index: 2;
@@ -11,17 +13,33 @@
 }
 
 #bg_img {
+  position: absolute;
   opacity: 0;
+  width: 50vw;
   transition: opacity 0.3s ease-in;
+  z-index: 5;
+}
+
+.start_back {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .slide_show {
-  position: relative;
+  position: absolute;
+    top : 30%;
+    left: 25%;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .title {
