@@ -1,5 +1,5 @@
 .poster {
-  position: absolute;
+  position: relative;
   z-index: 100;
 }
 .bg_image {
@@ -15,7 +15,7 @@
 #bg_img {
   position: absolute;
   opacity: 0;
-  width: 50vw;
+  width: 75vw;
   transition: opacity 0.3s ease-in;
   z-index: 5;
 }
@@ -29,11 +29,21 @@
   align-items: center;
   z-index: 2;
 }
+.start_front {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
 
 .slide_show {
   position: absolute;
-    top : 30%;
-    left: 25%;
+    top : 25%;
+    left: 12.5%;
   width: 100%;
   height: auto;
   display: flex;
