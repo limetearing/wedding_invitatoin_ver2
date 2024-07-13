@@ -76,12 +76,13 @@
   left: 0;
   width: 100%;
   height: auto;
-  margin-top: -5%;
+  margin-top: -1%;
 }
 
 
 .we {
   position: relative;
+margin-top: -2%;
 }
 
 .wedding {
@@ -125,7 +126,7 @@
     transition: transform 1s;
 }
 .carousel_slide {
-    flex: 0 0 25vw; /* 이미지 크기 설정  */
+    flex: 0 0 60vw; /* 이미지 크기 설정  */
     position: relative;
 }
 
@@ -146,8 +147,8 @@
 }
 
 .carousel_button {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     color: #fff;
     background: transparent;
     border: none;
