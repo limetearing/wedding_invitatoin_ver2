@@ -4,18 +4,16 @@
 }
 .bg_image {
   position: absolute;
-    width: 100vw;
-  top: 0;
-  left: 0;
+  top: 10vw;
+  left: 12.5vw;
+  width: 75vw;
   z-index: 2;
-  width: 100%;
   height: auto;
 }
 
 #bg_img {
   position: absolute;
   opacity: 0;
-  width: 75vw;
   transition: opacity 0.3s ease-in;
   z-index: 5;
 }
@@ -52,7 +50,7 @@
   z-index: 5;
 }
 
-.title {
+.invitation {
   position: relative;
   top: 0;
   left: 0;
@@ -67,9 +65,29 @@
   z-index: 2;
   width: 100%;
   height: auto;
-/*  margin-top: -15%;*/
+  margin-top: 0%;
 
 }
+.intro_div {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin-top: -5%;
+
+}
+
+.intro_img {
+  position: absolute;
+  top: 12vw;
+  left: 5vw;
+  width: 35vw;
+  z-index: 2;
+  height: auto;
+}
+
 .calendar {
   position: relative;
   top: 0;
