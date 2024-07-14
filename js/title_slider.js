@@ -1,5 +1,5 @@
 // 이미지 소스 배열
-var path = "./src/title/";
+var path = "./src/intro/img/groom/";
 var images = [
   "1_1_bgimage1.jpg",
   "1_1_bgimage2.jpg",

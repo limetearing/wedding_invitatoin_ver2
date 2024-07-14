@@ -79,7 +79,7 @@
 
 }
 
-.intro_img {
+.intro_img_groom {
   position: absolute;
   top: 12vw;
   left: 5vw;
@@ -87,6 +87,15 @@
   z-index: 2;
   height: auto;
 }
+.intro_img_bride {
+  position: absolute;
+  top: 72vw;
+  left: 55vw;
+  width: 35vw;
+  z-index: 2;
+  height: auto;
+}
+
 
 .calendar {
   position: relative;
