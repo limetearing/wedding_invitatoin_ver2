@@ -111,6 +111,38 @@ overflow-x:hidden;
   margin-top: -1%;
 }
 
+.list {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top : 15%;
+    z-index: 100;
+    transform: translate(0, 0);
+}
+
+.item {
+  padding-right: 1rem;
+  list-style: none;
+  user-select: none;
+}
+
+.item:first-child {
+  padding-left: 1rem;
+}
+
+.link {
+  display: block;
+  -webkit-user-drag: none;
+}
+
+.image {
+  display: block;
+  width: 70vw;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
 
 .we {
   position: relative;
@@ -189,7 +221,7 @@ margin-top: -2%;
 }
 
 .carousel_prev {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -200,7 +232,7 @@ margin-top: -2%;
 }
 
 .carousel_next {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
