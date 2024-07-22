@@ -23,7 +23,7 @@ const onScrollEnd = (e) => {
   endX = getClientX(e);
   listX = getTranslateX();
   if (listX > 0) {
-    setTranslateX(0);
+    setTranslateX(listClientWidth - listScrollWidth);
     list.style.transition = `all 0.3s ease`;
     listX = 0;
   } else if (listX < listClientWidth - listScrollWidth) {
