@@ -89,7 +89,7 @@ overflow-x:hidden;
   top: 12vw;
   left: 5vw;
   width: 35vw;
-  z-index: 2;
+  z-index: 5;
   height: auto;
 }
 .intro_img_bride {
@@ -97,7 +97,7 @@ overflow-x:hidden;
   top: 72vw;
   left: 55vw;
   width: 35vw;
-  z-index: 2;
+  z-index: 5;
   height: auto;
 }
 
