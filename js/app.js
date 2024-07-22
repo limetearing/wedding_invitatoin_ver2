@@ -2,6 +2,11 @@
 const list = document.querySelector('.list');
 const listScrollWidth = list.scrollWidth;
 const listClientWidth = list.clientWidth;
+const onClick = (e) => {
+  if (startX - endX !== 0) {
+    e.preventDefault();
+  }
+};
 // 이벤트마다 갱신될 값
 let startX = 0;
 let nowX = 0;
@@ -37,11 +42,7 @@ const onScrollEnd = (e) => {
     list.style.transition = '';
   }, 300);
 };
-const onClick = (e) => {
-  if (startX - endX !== 0) {
-    e.preventDefault();
-  }
-};
+
 const getClientX = (e) => {
   const isTouches = e.touches ? true : false;
   return isTouches ? e.touches[0].clientX : e.clientX;
