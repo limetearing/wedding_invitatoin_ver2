@@ -12,9 +12,28 @@ let startX = 0;
 let nowX = 0;
 let endX = 0;
 let listX = 0;
+const getTranslateX = () => {
+  return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
+};
+const setTranslateX = (x) => {
+  list.style.transform = `translateX(${x}px)`;
+};
+const getClientX = (e) => {
+  const isTouches = e.touches ? true : false;
+  return isTouches ? e.touches[0].clientX : e.clientX;
+};
+
 const onScrollMove = (e) => {
   nowX = getClientX(e);
   setTranslateX(listX + nowX - startX);
+};
+
+const onScrollStart = (e) => {
+  startX = getClientX(e);
+  window.addEventListener('mousemove', onScrollMove);
+  window.addEventListener('touchmove', onScrollMove);
+  window.addEventListener('mouseup', onScrollEnd);
+  window.addEventListener('touchend', onScrollEnd);
 };
 const onScrollEnd = (e) => {
   endX = getClientX(e);
@@ -43,26 +62,10 @@ const onScrollEnd = (e) => {
   }, 300);
 };
 
-const getClientX = (e) => {
-  const isTouches = e.touches ? true : false;
-  return isTouches ? e.touches[0].clientX : e.clientX;
-};
 
-const getTranslateX = () => {
-  return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
-};
 
-const setTranslateX = (x) => {
-  list.style.transform = `translateX(${x}px)`;
-};
 
-const onScrollStart = (e) => {
-  startX = getClientX(e);
-  window.addEventListener('mousemove', onScrollMove);
-  window.addEventListener('touchmove', onScrollMove);
-  window.addEventListener('mouseup', onScrollEnd);
-  window.addEventListener('touchend', onScrollEnd);
-};
+
 const bindEvents = () => {
   list.addEventListener('mousedown', onScrollStart);
   list.addEventListener('touchstart', onScrollStart);
