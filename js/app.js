@@ -2,22 +2,22 @@ let curPos = 0;
 let postion = 0;
 let start_x, end_x;
 const IMAGE_WIDTH = 375;
-const images = document.querySelector(".images")
+const show_dat = document.querySelector(".show_dat")
 
-images.addEventListener('touchstart', touch_start);
-images.addEventListener('touchend', touch_end);
+show_dat.addEventListener('touchstart', touch_start);
+show_dat.addEventListener('touchend', touch_end);
 
 function prev(){
   if(curPos > 0){
     postion += IMAGE_WIDTH;
-    images.style.transform = `translateX(${postion}px)`;
+    show_dat.style.transform = `translateX(${postion}px)`;
     curPos = curPos - 1;
   }
 }
 function next(){
   if(curPos < 3){
     postion -= IMAGE_WIDTH;
-    images.style.transform = `translateX(${postion}px)`;
+    show_dat.style.transform = `translateX(${postion}px)`;
     curPos = curPos + 1;
   }
 }
