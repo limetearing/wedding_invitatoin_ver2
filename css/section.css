@@ -111,6 +111,29 @@ overflow-x:hidden;
   margin-top: -1%;
 }
 
+.slide-wrap {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide-box {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  margin-top: 150px;
+  transform: all 0.5s;
+}
+
+.slide-contents {
+  width: 300px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
+
 .list {
   padding: 1rem 0;
   width: 100%;
