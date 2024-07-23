@@ -111,16 +111,20 @@ overflow-x:hidden;
   margin-top: -1%;
 }
 .slider-container {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    top: 15%;
+    left : 10%;
+    width: 80%;
     height: auto;
     overflow: hidden;
+    z-index: 100;
 }
 
 .slider {
     display: flex;
-    width: 300%;
+    width: 400%;
     transition: transform 0.3s ease;
+    z-index: 100;
 }
 
 .slide {
@@ -133,6 +137,7 @@ overflow-x:hidden;
     font-size: 2em;
     background: lightcoral;
     color: white;
+    z-index: 100;
 }
 
 .slide:nth-child(2) {
