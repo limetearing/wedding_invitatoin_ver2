@@ -24,15 +24,15 @@ function touchEnd(event) {
     const deltaX = endX - startX;
 
     if (deltaX < -slideWidth * 0.4) {
-        currentTranslate = prevTranslate - slideWidth * 0.8;
+        currentTranslate = prevTranslate - slideWidth * 0.78;
     } else if (deltaX > slideWidth * 0.4) {
-        currentTranslate = prevTranslate + slideWidth * 0.8;
+        currentTranslate = prevTranslate + slideWidth * 0.78;
     } else {
         currentTranslate = prevTranslate;
     }
 
     // 슬라이드 위치가 슬라이더 컨테이너의 시작과 끝을 넘지 않도록 조정
-    currentTranslate = Math.max(Math.min(currentTranslate, 0), -slideWidth * 0.8 * (totalSlides - 1));
+    currentTranslate = Math.max(Math.min(currentTranslate, 0), -slideWidth * 0.78 * (totalSlides - 1));
 
     slider.style.transition = 'transform 0.3s ease';
     slider.style.transform = `translateX(${currentTranslate}px)`;
@@ -48,14 +48,14 @@ function touchMove(event) {
         currentTranslate = prevTranslate + deltaX;
 
         // 슬라이드 위치가 슬라이더 컨테이너의 시작과 끝을 넘지 않도록 조정
-        currentTranslate = Math.max(Math.min(currentTranslate, 0), -slideWidth * 0.8 * (totalSlides - 1));
+        currentTranslate = Math.max(Math.min(currentTranslate, 0), -slideWidth * 0.78 * (totalSlides - 1));
 
         slider.style.transform = `translateX(${currentTranslate}px)`;
     }
 }
 
 function updateDots() {
-    const activeIndex = Math.round(Math.abs(currentTranslate / (slideWidth * 0.8)));
+    const activeIndex = Math.round(Math.abs(currentTranslate / (slideWidth * 0.78)));
     dots.forEach((dot, index) => {
         if (index === activeIndex) {
             dot.classList.add('active');
