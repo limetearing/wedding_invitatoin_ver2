@@ -133,14 +133,15 @@ overflow-x:hidden;
 }
 
 .album{
-  height: 300px;
-  width: 375px;
+  height: auto;
+  width: 100%;
   overflow: hidden;
 }
 .show_dat{
   position: relative;
   display: flex;
-  height: 300px;
+  height: auto;
+    width: 100%;
   transition: transform 0.5s;
 }
 
