@@ -22,9 +22,9 @@ function touchEnd() {
 
     // 다음 또는 이전 슬라이드로 넘어가려면 일정 거리 이상 이동해야 함
     if (movedBy < 0) {
-        currentTranslate = prevTranslate - movedBy;
+        currentTranslate = prevTranslate - movedBy/4;
     } else if (movedBy > 0) {
-        currentTranslate = prevTranslate + movedBy;
+        currentTranslate = prevTranslate + movedBy/4;
     } else {
         currentTranslate = prevTranslate;
     }
