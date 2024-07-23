@@ -1,38 +1,36 @@
 let curPos = 0;
 let postion = 0;
 let start_x, end_x;
-const contentsWidth = 300;
-const contents = document.querySelector(".slide-contents");
+const IMAGE_WIDTH = 375;
+const images = document.querySelector(".images")
 
-contents.addEventListener('touchstart', touchStart);
-contents.addEventListener('touchend', touchEnd);
+images.addEventListener('touchstart', touch_start);
+images.addEventListener('touchend', touch_end);
 
-// 뒤로가기, 앞으로 가기 함수 : 터치 이벤트가 발생(touchEnd())하면 호출 됨
-function prev() {
-  if (curPos > 0) {
-    postion += contentsWidth;
-    contents.style.transform = 'translateX(${postion}px)';
+function prev(){
+  if(curPos > 0){
+    postion += IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
     curPos = curPos - 1;
   }
 }
-
-function next() {
-  if (curPos < 2) {
-    position += contentsWidth;
-    contents.style.transform = 'translateX(${postion}px)';
+function next(){
+  if(curPos < 3){
+    postion -= IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
     curPos = curPos + 1;
   }
 }
 
-function touchStart(e) {
-  start_x = e.touchs[0].pageX
+function touch_start(event) {
+  start_x = event.touches[0].pageX
 }
 
-function touchEnd(e) {
-  end_x = e.changedTouches[0].pageX;
-  if (start_x > end_x) {
+function touch_end(event) {
+  end_x = event.changedTouches[0].pageX;
+  if(start_x > end_x){
     next();
-  } else {
+  }else{
     prev();
   }
 }

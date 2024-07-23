@@ -132,7 +132,17 @@ overflow-x:hidden;
   margin: 0 auto;
 }
 
-
+.album{
+  height: 300px;
+  width: 375px;
+  overflow: hidden;
+}
+.images{
+  position: relative;
+  display: flex;
+  height: 300px;
+  transition: transform 0.5s;
+}
 
 .list {
   padding: 1rem 0;
