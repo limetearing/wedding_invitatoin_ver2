@@ -52,7 +52,7 @@ const onClick = (e) => {
 };
 const getClientX = (e) => {
   const isTouches = e.touches ? true : false;
-  return isTouches ? e.clientX : e.clientX;
+  return isTouches ? e.touches[0].clientX : e.clientX;
 };
 const getTranslateX = () => {
   return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
