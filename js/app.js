@@ -21,10 +21,10 @@ function touchEnd() {
     const movedBy = currentTranslate - prevTranslate;
 
     // 다음 또는 이전 슬라이드로 넘어가려면 일정 거리 이상 이동해야 함
-    if (movedBy < -slideWidth / 4) {
-        currentTranslate = prevTranslate - slideWidth;
-    } else if (movedBy > slideWidth / 4) {
-        currentTranslate = prevTranslate + slideWidth;
+    if (movedBy < 0) {
+        currentTranslate = prevTranslate - movedBy;
+    } else if (movedBy > 0) {
+        currentTranslate = prevTranslate + movedBy;
     } else {
         currentTranslate = prevTranslate;
     }
