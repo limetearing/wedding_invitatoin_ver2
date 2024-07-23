@@ -4,6 +4,7 @@ let prevTranslate = 0;
 let isDragging = false;
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
 const totalSlides = slides.length;
 const slideWidth = window.innerWidth;
 
@@ -36,6 +37,8 @@ function touchEnd(event) {
     slider.style.transition = 'transform 0.3s ease';
     slider.style.transform = `translateX(${currentTranslate}px)`;
     prevTranslate = currentTranslate;
+
+    updateDots();
 }
 
 function touchMove(event) {
@@ -49,4 +52,15 @@ function touchMove(event) {
 
         slider.style.transform = `translateX(${currentTranslate}px)`;
     }
+}
+
+function updateDots() {
+    const activeIndex = Math.abs(currentTranslate / slideWidth);
+    dots.forEach((dot, index) => {
+        if (index === activeIndex) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
 }
