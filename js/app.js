@@ -22,15 +22,13 @@ function touchEnd(event) {
     const endX = event.changedTouches[0].clientX;
     const deltaX = endX - startX;
 
-    // if (deltaX < -slideWidth / 4) {
-    //     currentTranslate = prevTranslate - slideWidth;
-    // } else if (deltaX > slideWidth / 4) {
-    //     currentTranslate = prevTranslate + slideWidth;
-    // } else {
-    //     currentTranslate = prevTranslate;
-    // }
-
-    currentTranslate = prevTranslate + deltaX;
+    if (deltaX < -slideWidth / 4) {
+        currentTranslate = prevTranslate - slideWidth*8/10;
+    } else if (deltaX > slideWidth / 4) {
+        currentTranslate = prevTranslate + slideWidth*8/10;
+    } else {
+        currentTranslate = prevTranslate;
+    }
 
     // 슬라이드 위치가 슬라이더 컨테이너의 시작과 끝을 넘지 않도록 조정
     currentTranslate = Math.max(Math.min(currentTranslate, 0), -slideWidth * (totalSlides - 1));
