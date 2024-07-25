@@ -1,50 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome</title>
-  <link href="css/startPage.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Link Example</title>
+    <style>
+        .icon {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            user-select: none; /* 텍스트 선택 방지 */
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="slide-wrap">
-      <div class="slide-box">
-        <section class="slide-contents">
-          <h1>오늘의 감정을<br>
-              기록할 준비가<br>
-              됐나요? 1<br></h1>
-
-          <span>Emoary로 당신의 하루를 기록 해보세요.<br>
-                오늘의 감정을 모아 월별로 확인할 수 있어요.</span>
-        </section>
-
-        <section class="slide-contents">
-          <h1>오늘의 감정을<br>
-              기록할 준비가<br>
-              됐나요? 2<br></h1>
-
-          <span>Emoary로 당신의 하루를 기록 해보세요.<br>
-                오늘의 감정을 모아 월별로 확인할 수 있어요.</span>
-        </section>
-
-        <section class="slide-contents">
-          <h1>오늘의 감정을<br>
-              기록할 준비가<br>
-              됐나요? 3<br></h1>
-
-          <span>Emoary로 당신의 하루를 기록 해보세요.<br>
-                오늘의 감정을 모아 월별로 확인할 수 있어요.</span>
-        </section>
-      </div>
+    <div class="icon" onclick="copyLink()">
+        📋 링크 복사
     </div>
-  </div>
-
-    <article class="button-wrap" onclick="startBtn()">
-      <input type="button" value="START" id="start-btn">
-    </article>
-  </div>
-
-  <script src="js/startPage.js"></script>
+<script src="./js/function.js"></script>
 </body>
 </html>
