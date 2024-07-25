@@ -8,7 +8,7 @@ overflow-x:hidden;
   z-index: 100;
 }
 .bg_image {
-  position: absolute;
+  position: relative;
   /* top: 10vw; */
   /* left: 12.5vw;
   width: 75vw; */
@@ -26,38 +26,6 @@ overflow-x:hidden;
   z-index: 5;
 }
 
-.start_back {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-.start_front {
-  position: absolute;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-
-.slide_show {
-  position: absolute;
-    top : 14%;
-    left: 12.5%;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
 .invitation {
   position: relative;
   top: 0;
@@ -65,6 +33,16 @@ overflow-x:hidden;
   z-index: 2;
   width: 100%;
   height: auto;
+  margin-top: -1%;
+}
+.intro_div {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin-top: -5%;
 }
 .intro {
   position: relative;
@@ -76,16 +54,7 @@ overflow-x:hidden;
   margin-top: 0%;
 
 }
-.intro_div {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: auto;
-  margin-top: -5%;
 
-}
 
 .intro_img_groom {
   position: absolute;
@@ -115,14 +84,7 @@ overflow-x:hidden;
   height: auto;
   margin-top: -1%;
 }
-.contact {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  margin-top: -1%;
-}
+
 .slider-container {
     position: absolute;
     top: 15%;
@@ -152,7 +114,7 @@ overflow-x:hidden;
     background: lightcoral;
     color: white;
     z-index: 100;
-      border-radius: 100px;
+      border-radius: 50px;
 }
 
 .slide:nth-child(2) {
@@ -193,71 +155,7 @@ overflow-x:hidden;
 .dot.active {
     background: #717171;
 }
-.slide-wrap {
-  width: 300px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 
-.slide-box {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  margin-top: 150px;
-  transform: all 0.5s;
-}
-
-.slide-contents {
-  width: 300px;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.album{
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-}
-.show_dat{
-  position: relative;
-  display: flex;
-  height: auto;
-    width: 100%;
-  transition: transform 0.5s;
-}
-
-.list {
-  padding: 1rem 0;
-  width: 100%;
-  display: flex;
-  position: absolute;
-  top : 15%;
-    z-index: 100;
-    transform: translate(0, 0);
-}
-
-.item {
-  padding-right: 1rem;
-  list-style: none;
-  user-select: none;
-}
-
-.item:first-child {
-  padding-left: 1rem;
-}
-
-.link {
-  display: block;
-  -webkit-user-drag: none;
-}
-
-.image {
-  display: block;
-  width: 70vw;
-  height: auto;
-  -webkit-user-drag: none;
-}
 
 
 .we {
@@ -308,86 +206,14 @@ margin-top: -2%;
   height: auto;
   margin-top: -8%;
 }
-.contact_call1 {
-  position: absolute;
-  top: 28.5%;
-  left: 34.5%;
-  z-index: 2;
-  width: 4.5%;
-  height: auto;
-}
-.contact_call2 {
-  position: absolute;
-  top: 28.5%;
-  left: 75.1%;
-  z-index: 2;
-  width: 4.5%;
-  height: auto;
-}
-.contact_copy1 {
-  position: absolute;
-  top: 48.5%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-.contact_copy2 {
-  position: absolute;
-  top: 55%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-.contact_copy3 {
-  position: absolute;
-  top: 61.5%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-.contact_copy4 {
-  position: absolute;
-  top: 76.5%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-.contact_copy5 {
-  position: absolute;
-  top: 83%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-.contact_copy6 {
-  position: absolute;
-  top: 89.5%;
-  left: 65%;
-  z-index: 2;
-  width: 15%;
-  height: auto;
-}
-
-.thanks {
-  position: relative;
-}
-.thanks_bg {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-}
-.thanks_button {
-  position: absolute;
-  top: 55%;
-  left: 25%;
-  z-index: 2;
-  width: 50%;
+.icon {
+    position: absolute;
+    top : 25%;
+    left : 20%;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
 }
