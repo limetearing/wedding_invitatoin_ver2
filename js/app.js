@@ -23,9 +23,9 @@ function touchEnd(event) {
     const endX = event.changedTouches[0].clientX;
     const deltaX = endX - startX;
 
-    if (deltaX < -slideWidth * 0.4) {
+    if (deltaX < 0) {
         currentTranslate = prevTranslate - slideWidth * 0.78;
-    } else if (deltaX > slideWidth * 0.4) {
+    } else if (deltaX > 0) {
         currentTranslate = prevTranslate + slideWidth * 0.78;
     } else {
         currentTranslate = prevTranslate;

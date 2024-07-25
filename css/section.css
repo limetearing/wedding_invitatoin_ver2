@@ -94,6 +94,7 @@ overflow-x:hidden;
   width: 35vw;
   z-index: 5;
   height: auto;
+  border-radius: 30px;
 }
 .intro_img_bride {
   position: absolute;
@@ -102,10 +103,19 @@ overflow-x:hidden;
   width: 35vw;
   z-index: 5;
   height: auto;
+  border-radius: 30px;
 }
 
 
 .calendar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: -1%;
+}
+.contact {
   position: relative;
   top: 0;
   left: 0;
@@ -128,6 +138,7 @@ overflow-x:hidden;
     width: 500%;
     transition: transform 0.3s ease;
     z-index: 100;
+
 }
 
 .slide {
@@ -141,6 +152,7 @@ overflow-x:hidden;
     background: lightcoral;
     color: white;
     z-index: 100;
+      border-radius: 100px;
 }
 
 .slide:nth-child(2) {
