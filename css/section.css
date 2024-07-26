@@ -206,7 +206,7 @@ margin-top: -2%;
   height: auto;
   margin-top: -8%;
 }
-.icon {
+.icon1 {
     position: absolute;
     top : 16%;
     left : 40%;
@@ -218,8 +218,37 @@ margin-top: -2%;
     z-index: 200;
     user-select: none;
 }
+.icon2 {
+    position: absolute;
+    top : 16%;
+    left : 80%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon_link {
+    position: absolute;
 
+    top : 70%;
+    left : 15%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
 .icon_img {
 position: absolute;
 
+}
+.icon_link {
+  position: absolute;
+
+  width: 70%;
 }
