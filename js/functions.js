@@ -1,6 +1,4 @@
-function copyLink() {
-    const link = "https://www.example.com"; // 복사할 링크
-
+function copyToClipboard(link, message) {
     // 임시 텍스트 영역 생성
     const tempTextArea = document.createElement('textarea');
     tempTextArea.value = link;
@@ -15,8 +13,11 @@ function copyLink() {
 
     try {
         const successful = document.execCommand('copy');
-        const msg = successful ? '성공적으로 복사되었습니다!' : '복사에 실패했습니다!';
-        alert(msg);
+        if (successful) {
+            alert(message);
+        } else {
+            alert('복사에 실패했습니다.');
+        }
     } catch (err) {
         alert('복사 중 오류가 발생했습니다.');
         console.error('복사 중 오류:', err);

@@ -208,13 +208,18 @@ margin-top: -2%;
 }
 .icon {
     position: absolute;
-    top : 25%;
-    left : 20%;
+    top : 16%;
+    left : 40%;
     cursor: pointer;
-    display: inline-block;
-    padding: 10px;
+    /* display: inline-block; */
+    /* padding: 10px; */
     background-color: #f0f0f0;
     border-radius: 5px;
     z-index: 200;
     user-select: none;
+}
+
+.icon_img {
+position: absolute;
+
 }
