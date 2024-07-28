@@ -58,18 +58,18 @@ overflow-x:hidden;
 
 .intro_img_groom {
   position: absolute;
-  top: 12vw;
-  left: 5vw;
-  width: 35vw;
+  top: 13vw;
+  left: 3vw;
+  width: 40vw;
   z-index: 5;
   height: auto;
   border-radius: 30px;
 }
 .intro_img_bride {
   position: absolute;
-  top: 94vw;
-  left: 60vw;
-  width: 35vw;
+  top: 101vw;
+  left: 57vw;
+  width: 40vw;
   z-index: 5;
   height: auto;
   border-radius: 30px;
@@ -82,12 +82,12 @@ overflow-x:hidden;
   left: 0;
   width: 100%;
   height: auto;
-  margin-top: -4%;
+  margin-top: -50%;
 }
 
 .slider-container {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left : 11%;
     width: 78%;
     height: auto;
