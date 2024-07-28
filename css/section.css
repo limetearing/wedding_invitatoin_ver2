@@ -33,7 +33,7 @@ overflow-x:hidden;
   z-index: 2;
   width: 100%;
   height: auto;
-  margin-top: -1%;
+  margin-top: -2%;
 }
 .intro_div {
   position: relative;
@@ -67,7 +67,7 @@ overflow-x:hidden;
 }
 .intro_img_bride {
   position: absolute;
-  top: 72vw;
+  top: 86vw;
   left: 55vw;
   width: 35vw;
   z-index: 5;
@@ -209,7 +209,7 @@ margin-top: -2%;
 .icon1 {
     position: absolute;
     top : 16%;
-    left : 40%;
+    left : 20%;
     cursor: pointer;
     /* display: inline-block; */
     /* padding: 10px; */
@@ -245,6 +245,7 @@ margin-top: -2%;
 }
 .icon_img {
 position: absolute;
+ width: 10vw;
 
 }
 .icon_link {
