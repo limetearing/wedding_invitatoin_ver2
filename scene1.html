@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Link Example</title>
+    <title>모바일 청첩장</title>
     <style>
-        .icon {
-            cursor: pointer;
-            display: inline-block;
-            padding: 10px;
-            background-color: #f0f0f0;
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
             border-radius: 5px;
-            user-select: none; /* 텍스트 선택 방지 */
+            cursor: pointer;
         }
     </style>
+    <script>
+        function showAccountNumber() {
+            var newWindow = window.open("", "_blank", "width=300,height=200");
+            newWindow.document.write("<html><head><title>계좌번호</title></head><body>");
+            newWindow.document.write("<h2>계좌번호</h2>");
+            newWindow.document.write("<p>우리은행 123-456-7890</p>");
+            newWindow.document.write("<button onclick='window.close();'>닫기</button>");
+            newWindow.document.write("</body></html>");
+        }
+    </script>
 </head>
 <body>
-
-    <div class="icon" onclick="copyLink()">
-        📋 링크 복사
-    </div>
-<script src="./js/function.js"></script>
+    <h2>모바일 청첩장</h2>
+    <p>저희 결혼을 축하해 주셔서 감사합니다!</p>
+    <button class="button" onclick="showAccountNumber()">계좌번호 보기</button>
 </body>
 </html>
