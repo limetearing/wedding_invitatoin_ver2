@@ -21,8 +21,8 @@ function showSlides() {
   var newSrc = path + images[currentIndex];
   var newSrc2 = path2 + images[currentIndex];
   // 투명도를 0으로 설정
-  bg_img.style.opacity = 0;
-  bg_img2.style.opacity = 0;
+  bg_img.style.opacity = 1;
+  bg_img2.style.opacity = 1;
   currentIndex++;
   if (currentIndex > 5) {
     currentIndex = 0;
