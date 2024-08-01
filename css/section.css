@@ -257,7 +257,67 @@ margin-top: -2%;
 }
 .icon2 {
     position: absolute;
-    top : 24.5%;
+    top : 24.4%;
+    left : 70%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon3 {
+    position: absolute;
+    top : 31.6%;
+    left : 70%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon4 {
+    position: absolute;
+    top : 46.1%;
+    left : 70%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon5 {
+    position: absolute;
+    top : 54.1%;
+    left : 70%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon5 {
+    position: absolute;
+    top : 54.1%;
+    left : 70%;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index: 200;
+    user-select: none;
+}
+.icon6 {
+    position: absolute;
+    top : 62.1%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -270,9 +330,10 @@ margin-top: -2%;
 .icon_link {
     position: absolute;
 
-    top : 70%;
-    left : 15%;
+    top : 87%;
+    left : 19%;
     cursor: pointer;
+
     /* display: inline-block; */
     /* padding: 10px; */
     /* background-color: #f0f0f0; */
@@ -288,5 +349,5 @@ position: absolute;
 .icon_link {
   position: absolute;
 
-  width: 70%;
+  width: 60%;
 }
