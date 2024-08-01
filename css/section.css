@@ -199,18 +199,10 @@ margin-top: -2%;
 @media (max-width: 768px) {
     .gallery {
         grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g"
-            "h"
-            "i"
-            "j"
-            "k"
-            "l";
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k l";
         grid-template-columns: 1fr;
     }
 }
