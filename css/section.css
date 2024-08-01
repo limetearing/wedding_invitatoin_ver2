@@ -196,6 +196,24 @@ margin-top: -2%;
 .gallery div a {
     display: block;
 }
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            "j"
+            "k"
+            "l";
+        grid-template-columns: 1fr;
+    }
+}
 .gallary_back {
   position: relative;
   margin-top: -1%;
