@@ -55,7 +55,6 @@ overflow-x:hidden;
 
 }
 
-
 .intro_img_groom {
   position: absolute;
   top: 13vw;
@@ -172,6 +171,36 @@ margin-top: -2%;
 
 }
 
+
+.gallery {
+  margin-top: -15%;
+  position: absolute;
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k l";
+    gap: 10px;
+    padding: 10px;
+    z-index: 100;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery div {
+    position: relative;
+}
+.gallery div a {
+    display: block;
+}
+.gallary_back {
+  position: relative;
+  margin-top: -1%;
+    width: 100%;
+}
 
 .notice {
   position: relative;
