@@ -59,16 +59,16 @@ overflow-x:hidden;
   position: absolute;
   top: 9%;
   left: 3vw;
-  width: 40vw;
+  width: 45vw;
   z-index: 5;
   height: auto;
   border-radius: 30px;
 }
 .intro_img_bride {
   position: absolute;
-  top: 63%;
-  left: 57vw;
-  width: 40vw;
+  top: 61%;
+  left: 49vw;
+  width: 45vw;
   z-index: 5;
   height: auto;
   border-radius: 30px;
@@ -173,7 +173,7 @@ margin-top: -2%;
 
 
 .gallery {
-  margin-top: -15%;
+  margin-top: 39%;
   position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -194,7 +194,7 @@ margin-top: -2%;
 }
 @media (max-width: 480px) {
     .gallery {
-      margin-top: -15%;
+      margin-top: 15%;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
