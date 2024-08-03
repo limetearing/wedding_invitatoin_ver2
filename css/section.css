@@ -194,6 +194,7 @@ margin-top: -2%;
 }
 @media (max-width: 480px) {
     .gallery {
+      margin-top: -15%;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
