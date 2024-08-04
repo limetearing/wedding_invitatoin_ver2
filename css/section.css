@@ -229,7 +229,7 @@ margin-top: -2%;
 }
 .notice_map {
   position: absolute;
-  top: 13.7%;
+  top: 18.4%;
   left: 10%;
   z-index: 100;
   width: 100%;
@@ -246,11 +246,11 @@ margin-top: -2%;
   z-index: 1;
   width: 100%;
   height: auto;
-  margin-top: -8%;
+  margin-top: -4%;
 }
 .icon1 {
     position: absolute;
-    top : 17.1%;
+    top : 21.9%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -262,7 +262,7 @@ margin-top: -2%;
 }
 .icon2 {
     position: absolute;
-    top : 25.2%;
+    top : 27.2%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -274,7 +274,7 @@ margin-top: -2%;
 }
 .icon3 {
     position: absolute;
-    top : 33.2%;
+    top : 32.5%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -286,7 +286,7 @@ margin-top: -2%;
 }
 .icon4 {
     position: absolute;
-    top : 49.2%;
+    top : 42.9%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -298,7 +298,7 @@ margin-top: -2%;
 }
 .icon5 {
     position: absolute;
-    top : 54.1%;
+    top : 49.1%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -308,24 +308,13 @@ margin-top: -2%;
     z-index: 200;
     user-select: none;
 }
-.icon5 {
-    position: absolute;
-    top : 58.4%;
-    left : 70%;
-    cursor: pointer;
-    /* display: inline-block; */
-    /* padding: 10px; */
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    z-index: 200;
-    user-select: none;
-}
+
 
 .icon_link {
     position: absolute;
 
-    top : 82%;
-    left : 19%;
+    top : 65.5%;
+    left : 24%;
     cursor: pointer;
 
     /* display: inline-block; */
@@ -343,5 +332,5 @@ position: absolute;
 .icon_link {
   position: absolute;
 
-  width: 60%;
+  width: 50%;
 }
