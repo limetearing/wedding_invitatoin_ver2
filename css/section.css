@@ -208,7 +208,7 @@ margin-top: -2%;
 .gallary_back {
 
   position: relative;
-  margin-top: -5%;
+  margin-top: -1%;
     width: 100%;
 }
 
@@ -247,7 +247,7 @@ margin-top: -2%;
 }
 .icon1 {
     position: absolute;
-    top : 17%;
+    top : 17.1%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -259,7 +259,7 @@ margin-top: -2%;
 }
 .icon2 {
     position: absolute;
-    top : 24.4%;
+    top : 25.2%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -271,7 +271,7 @@ margin-top: -2%;
 }
 .icon3 {
     position: absolute;
-    top : 31.6%;
+    top : 33.2%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -283,7 +283,7 @@ margin-top: -2%;
 }
 .icon4 {
     position: absolute;
-    top : 46.1%;
+    top : 49.2%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -307,7 +307,7 @@ margin-top: -2%;
 }
 .icon5 {
     position: absolute;
-    top : 54.1%;
+    top : 58.4%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -317,22 +317,11 @@ margin-top: -2%;
     z-index: 200;
     user-select: none;
 }
-.icon6 {
-    position: absolute;
-    top : 62.1%;
-    left : 70%;
-    cursor: pointer;
-    /* display: inline-block; */
-    /* padding: 10px; */
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    z-index: 200;
-    user-select: none;
-}
+
 .icon_link {
     position: absolute;
 
-    top : 87%;
+    top : 82%;
     left : 19%;
     cursor: pointer;
 
