@@ -81,7 +81,8 @@ overflow-x:hidden;
   left: 0;
   width: 100%;
   height: auto;
-  margin-top: -50%;
+  margin-top: -60%;
+  z-index: 5;
 }
 
 .slider-container {
@@ -173,7 +174,7 @@ margin-top: -2%;
 
 
 .gallery {
-  margin-top: 39%;
+  margin-top: 26%;
   position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -194,7 +195,7 @@ margin-top: -2%;
 }
 @media (max-width: 480px) {
     .gallery {
-      margin-top: 39%;
+      margin-top: 26%;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
@@ -208,12 +209,14 @@ margin-top: -2%;
 .gallary_back {
 
   position: relative;
-  margin-top: -1%;
+  margin-top: -15%;
     width: 100%;
+    z-index: 3;
 }
 
 .notice {
   position: relative;
+  z-index: 6;
 }
 .notice_bg {
   position: relative;

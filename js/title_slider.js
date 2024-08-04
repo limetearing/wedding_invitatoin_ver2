@@ -5,9 +5,6 @@ var images = [
   "1_1_bgimage1.jpg",
   "1_1_bgimage2.jpg",
   "1_1_bgimage3.jpg",
-  "1_1_bgimage4.jpg",
-  "1_1_bgimage5.jpg",
-  "1_1_bgimage6.jpg",
 ];
 
 // 현재 이미지 인덱스
@@ -24,7 +21,7 @@ function showSlides() {
   bg_img.style.opacity = 1;
   bg_img2.style.opacity = 1;
   currentIndex++;
-  if (currentIndex > 5) {
+  if (currentIndex > 2) {
     currentIndex = 0;
   }
 
