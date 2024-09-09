@@ -253,7 +253,7 @@ margin-top: -2%;
 }
 .icon1 {
     position: absolute;
-    top : 21.9%;
+    top : 12.65%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -265,7 +265,7 @@ margin-top: -2%;
 }
 .icon2 {
     position: absolute;
-    top : 27.2%;
+    top : 18.75%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -277,7 +277,7 @@ margin-top: -2%;
 }
 .icon3 {
     position: absolute;
-    top : 32.5%;
+    top : 25.2%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -289,7 +289,7 @@ margin-top: -2%;
 }
 .icon4 {
     position: absolute;
-    top : 42.9%;
+    top : 36.15%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -301,7 +301,7 @@ margin-top: -2%;
 }
 .icon5 {
     position: absolute;
-    top : 49.1%;
+    top : 42.95%;
     left : 70%;
     cursor: pointer;
     /* display: inline-block; */
@@ -316,7 +316,7 @@ margin-top: -2%;
 .icon_link {
     position: absolute;
 
-    top : 65.5%;
+    top : 61.5%;
     left : 24%;
     cursor: pointer;
 
