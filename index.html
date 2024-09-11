@@ -158,12 +158,7 @@
   <script>
       // 음악 파일 리스트
       const musicFiles = [
-          'audio/Angel_Springs.mp3',  // 파일 경로를 실제로 수정하세요
-          'audio/River_Flows_in_You.mp3',
-          'audio/AMO.mp3',
-          'audio/Love_Lee.mp3',
           'audio/always_with.mp3',
-          'audio/To_You.mp3'
       ];
 
       // 현재 재생중인 음악 인덱스
@@ -171,7 +166,7 @@
 
       // 오디오 요소 참조
       const musicPlayer = document.getElementById('musicPlayer');
-
+      musicPlayer.volume = 0.2;
       // 첫 번째 음악 파일 로드
       musicPlayer.src = musicFiles[currentIndex1];
       musicPlayer.play();
