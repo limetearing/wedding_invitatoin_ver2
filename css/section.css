@@ -246,6 +246,14 @@ margin-top: -2%;
 .contact {
   position: relative;
 }
+.musicPlayer1{
+  position: absolute;
+  z-index: 10;
+  top : 72.75%;
+  left : 2%;
+}
+
+
 .contact_bg {
   position: relative;
   top: 0;
