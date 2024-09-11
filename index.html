@@ -167,19 +167,19 @@
       ];
 
       // 현재 재생중인 음악 인덱스
-      let currentIndex = 0;
+      let currentIndex1 = 0;
 
       // 오디오 요소 참조
       const musicPlayer = document.getElementById('musicPlayer');
 
       // 첫 번째 음악 파일 로드
-      musicPlayer.src = musicFiles[currentIndex];
+      musicPlayer.src = musicFiles[currentIndex1];
       musicPlayer.play();
 
       // 음악이 끝날 때 다음 음악으로 전환하는 함수
       musicPlayer.addEventListener('ended', function () {
-          currentIndex = (currentIndex + 1) % musicFiles.length; // 다음 음악으로 이동 (무한 반복)
-          musicPlayer.src = musicFiles[currentIndex];            // 새로운 음악 파일 설정
+          currentIndex1 = (currentIndex1 + 1) % musicFiles.length; // 다음 음악으로 이동 (무한 반복)
+          musicPlayer.src = musicFiles[currentIndex1];            // 새로운 음악 파일 설정
           musicPlayer.play();                                   // 재생
       });
   </script>
